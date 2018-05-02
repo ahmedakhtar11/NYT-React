@@ -7,7 +7,7 @@ module.exports = (app) => {
         request.get({
             url: "https://api.nytimes.com/svc/search/v2/articlesearch.json",
             qs: {
-              "api-key": "c10eecbd35d749628734ed3fde24d911",
+              "api-key": "02c5bdd2f862477baa6c29cffd68c563",
               "q": req.body.topic,
               "begin_date": req.body.start_date,
               "end_date": req.body.end_date,

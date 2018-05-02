@@ -40,7 +40,7 @@ class Home extends Component {
         success: "Here are your Articles!"
       }));
     } else {
-      this.setState({ error: `Bruh... Please be sure to enter a topic and that your dates are in YYYYMMDD format!` });
+      this.setState({ error: `Error, Make sure you enter are in YYYYMMDD format!` });
     }
 
 
@@ -53,7 +53,7 @@ class Home extends Component {
         this.setState({
           savedArticles: [...this.state.savedArticles, res.data],
           error: "",
-          success: "You successfully saved an Article, Bruh! You should go check out your Saved Articles and Delete ones you have already read!"
+          success: "You successfully saved an Article!"
         });
       } else {
         this.setState({ error: res.data.error });
@@ -66,7 +66,7 @@ class Home extends Component {
       if (res.data.success) {
         this.setState({
           savedArticles: this.state.savedArticles.filter(article => article._id !== id),
-          success: "Successfully Deleted Article!"
+          success: "Successfully Deleted the Article!"
         });
       } else {
         this.setState({ error: res.data.error, success: "" })

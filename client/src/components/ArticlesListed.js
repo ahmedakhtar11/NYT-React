@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArticleListItem = (props) => (
+const ArticlesListed = (props) => (
   <li className="list-group-item">
     <a target="_blank" href={props.article.web_url || props.article.url}><h4>{props.article.snippet || props.article.title}</h4></a>
     {props.article._id ?
@@ -16,4 +16,4 @@ const ArticleListItem = (props) => (
   </li>
 );
 
-export default ArticleListItem;
+export default ArticlesListed;
