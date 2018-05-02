@@ -1,0 +1,25 @@
+{
+  "name": "nyt-react",
+  "version": "1.0.0",
+  "description": "New York Times Search and React",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ahmed Akhtar",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "*",
+    "body-parser": "*",
+    "concurrently": "*",
+    "cors": "*",
+    "express": "*",
+    "filter-object": "*",
+    "mongoose": "*",
+    "request": "*"
+  },
+  "repository": {
+    "type": "git"
+  }
+}

@@ -1,0 +1,61 @@
+body {
+  font-family: 'Helvetica', arial;
+  color: black;
+}
+
+#root {
+  position: relative;
+}
+
+#root:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/newspaperbackground.jpg");
+  width: 100%;
+  height: 100%;
+  opacity : 0.5;
+  z-index: -1;
+}
+
+.navbar {
+  background-color: aqua;
+  height: 5rem;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  padding-left: 10 rem;
+}
+
+.nav-item {
+  color: black;
+}
+
+.nav-item:hover {
+  color: rgb(205, 243, 255);
+
+}
+
+#home-header {
+  margin: 5rem 0 5rem 0;
+}
+
+.panel {
+  background-color: rgba(144, 144, 144, 0.5);
+}
+
+.panel-heading {
+  padding-top: 3rem;
+}
+
+.search-form {
+  padding: 10px;
+}
+
+.input-field label {
+  color: black;
+}
+
