@@ -11,7 +11,7 @@ const ResultsList = (props) => (
         handleDeleteSavedArticle={props.handleDeleteSavedArticle} />)
       :
       props.loading ? <h3>Loading Articles...</h3> :
-        <h3>No Articles Found.</h3>
+        <h3>No Articles Found. Try searching for something.</h3>
     }
   </ul>
 );

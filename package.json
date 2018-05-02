@@ -1,25 +1,30 @@
 {
-  "name": "nyt-react",
+  "name": "nytreact",
   "version": "1.0.0",
-  "description": "New York Times Search with React",
+  "description": "Nyt-React",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "concurrently \"nodemon server.js\" \"cd client && yarn start\""
   },
   "author": "Ahmed Akhtar",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "*",
-    "body-parser": "*",
-    "concurrently": "*",
-    "cors": "*",
-    "express": "*",
-    "filter-object": "*",
-    "mongoose": "*",
-    "request": "*"
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "filter-object": "^3.0.0",
+    "mongoose": "^5.0.6",
+    "request": "^2.83.0"
   },
   "repository": {
-    "type": "git"
-  }
+    "type": "git",
+    "url": "www.ahmedakhtar.com"
+  },
+  "bugs": {
+    "url": "www.ahmedakhtar.com"
+  },
+  "homepage": "www.ahmedakhtar.com"
 }

@@ -28,4 +28,4 @@ app.get("/", (req, res) => {
 require("./routes/api")(app);
 
 app.listen(port, 
-    () => console.log(`App Listening on LocalHost: ${port}`));
+    () => console.log(`App Listening on Localhost: ${port}`));

@@ -19,7 +19,7 @@ const Nav = () =>
           Home
         </Link>
         <Link to="/saved" className="nav-item nav-link">
-          Saved Articles
+          Saved
         </Link>
       </div>
     </div>

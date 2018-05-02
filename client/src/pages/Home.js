@@ -37,10 +37,10 @@ class Home extends Component {
     ) {
       API.getNytArticles(this.state.search).then(res => this.setState({
         articles: res.data,
-        success: "Artciles Successfully Added Below!"
+        success: "Here are your Articles!"
       }));
     } else {
-      this.setState({ error: `Error, Make sure you have entered the dates are in the correct YYYYMMDD format!` });
+      this.setState({ error: `Bruh... Please be sure to enter a topic and that your dates are in YYYYMMDD format!` });
     }
 
 
@@ -53,7 +53,7 @@ class Home extends Component {
         this.setState({
           savedArticles: [...this.state.savedArticles, res.data],
           error: "",
-          success: "Article Successfully Saved!"
+          success: "You successfully saved an Article, Bruh! You should go check out your Saved Articles and Delete ones you have already read!"
         });
       } else {
         this.setState({ error: res.data.error });

@@ -7,7 +7,7 @@ module.exports = (app) => {
         request.get({
             url: "https://api.nytimes.com/svc/search/v2/articlesearch.json",
             qs: {
-              "api-key": "02c5bdd2f862477baa6c29cffd68c563",
+              "api-key": "c10eecbd35d749628734ed3fde24d911",
               "q": req.body.topic,
               "begin_date": req.body.start_date,
               "end_date": req.body.end_date,
@@ -35,16 +35,16 @@ module.exports = (app) => {
             .then(results => res.json(results))
             .catch(err => {
                 console.log(err);
-                return res.send({ error: "Article Sucessfully Saved!" }).end();
+                return res.send({ error: "You have already saved this article" }).end();
             });
     });
 
     app.delete("/api/articles/:id", (req, res) => {
         Articles.deleteOne({ _id: req.params.id })
-            .then( results => res.send({ success: `Article ${req.params.id} Successfully Deleted!` , results: results}))
+            .then( results => res.send({ success: `Article ${req.params.id} successfully deleted.` , results: results}))
             .catch(err => {
                 console.log(err);
-                return res.send({ error: "Sorry, Couldn't Delete that article."}).end();
+                return res.send({ error: "Sorry, couldn't remove that article."}).end();
             });
     });
 };
